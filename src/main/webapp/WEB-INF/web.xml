@@ -1,0 +1,57 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<display-name>Login</display-name>
+  	<description>Login</description>
+  	<jsp-file>/login.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>CheckAuth</servlet-name>
+  	<display-name>CheckAuth</display-name>
+  	<description></description>
+  	<servlet-class>CheckAuth</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CheckAuth</servlet-name>
+  	<url-pattern>/chat</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>ChatList</servlet-name>
+  	<display-name>ChatList</display-name>
+  	<description></description>
+  	<jsp-file>/chatlist.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ChatList</servlet-name>
+  	<url-pattern>/chatlist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>Dialog</servlet-name>
+  	<display-name>Dialog</display-name>
+  	<description></description>
+  	<jsp-file>/dialog.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>SendMessage</servlet-name>
+  	<display-name>SendMessage</display-name>
+  	<description></description>
+  	<servlet-class>SendMessage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Dialog</servlet-name>
+  	<url-pattern>/dialog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SendMessage</servlet-name>
+  	<url-pattern>/sendMessage</url-pattern>
+  </servlet-mapping>
+</web-app>
